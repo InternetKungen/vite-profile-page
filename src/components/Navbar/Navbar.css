@@ -1,0 +1,19 @@
+.nav-button--about,
+.nav-button--projects,
+.nav-button--contact {
+    background: gray;
+    width: 15%;
+    min-width: 100px;
+}
+
+.nav-button--about {
+    border-radius: 50px 0 0 0;
+}
+
+.nav-button--projects {
+    border-radius: 0px;
+}
+
+.nav-button--contact {
+    border-radius: 0 50px 0 0;
+}

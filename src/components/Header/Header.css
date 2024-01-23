@@ -1,0 +1,16 @@
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: fit-content;
+}
+
+.header-inner-container {
+    direction: flex;
+    justify-content: flex-start;
+    width: 100%;
+    background: purple;
+}
