@@ -14,3 +14,19 @@ header {
     width: 100%;
     background: purple;
 }
+
+.header-container {
+    /* Dina befintliga stilar för headern här */
+    padding: 10px;
+    /* Andra stilar... */
+}
+
+.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.dark {
+    background-color: #000000;
+    color: #ffffff;
+}
