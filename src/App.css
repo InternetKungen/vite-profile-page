@@ -8,3 +8,16 @@
   justify-content: center;
 }
 
+.app-container {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark {
+  background-color: #000000;
+  color: #ffffff;
+}

@@ -2,18 +2,18 @@ const initialState = { // Vad som ska finnas i vår store
     theme: 'light'
 }
 
-const counterReducer = (state = initialState, action) => {
+const themeReducer = (state = initialState, action) => {
     switch(action.type) {
-        case 'INCREMENT': {
+        case 'LIGHT_THEME': {
             return {
                 ...state,
-                counter: state.counter + action.payload
+                theme: 'light'
             }
         }
-        case 'DECREMENT': {
+        case 'DARK_THEME': {
             return {
                 ...state,
-                counter: state.counter - action.payload
+                theme: 'dark'
             }
         }
         default:
@@ -21,4 +21,4 @@ const counterReducer = (state = initialState, action) => {
     }
 }
 
-export default counterReducer;
+export default themeReducer;
