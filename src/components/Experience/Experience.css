@@ -1,0 +1,27 @@
+.experience-container {
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.experience-inner-container {
+    width: 80%;
+    background: purple;
+    padding: 10px;
+}
+
+.experience-container__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience-container__middle {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.experience-container__bottom {
+    display: flex;
+    text-align: left;
+}

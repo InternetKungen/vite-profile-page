@@ -1,4 +1,5 @@
 import React from 'react';
+import './Theme.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { lightTheme, darkTheme } from '../../Redux/actions/themeActions'; // Uppdatera sökvägen beroende på din projektstruktur
 
@@ -16,8 +17,8 @@ function Theme() {
 
     return (
         <div>
-            <button onClick={handleLightTheme}>Light Theme</button>
-            <button onClick={handleDarkTheme}>Dark Theme</button>
+            <button className="light-theme-button" onClick={handleLightTheme}></button>
+            <button className="dark-theme-button" onClick={handleDarkTheme}></button>
             <p>Current Theme: {theme}</p>
         </div>
     );

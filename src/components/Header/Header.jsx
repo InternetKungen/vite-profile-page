@@ -12,8 +12,10 @@ const Header = () => {
   return (
     <header className={`header-container ${theme}`}>
         <div className="header-inner-container">
+          <div className="header-logo-theme-container">
             <Logo />
             <Theme />
+          </div>
             <Navbar />
         </div>
     </header>
