@@ -1,8 +1,11 @@
 import './Experience.css';
+import { useSelector } from 'react-redux';
 
 function Experience ({ title, city, description, dateFrom, dateTo, info }) {
+    const theme = useSelector((state) => state.theme);
+
     return (
-        <div className="experience-container">
+        <div className={`experience-container ${theme}`}>
             <div className="experience-inner-container">
                 <div className="experience-container__top">
                     {title}, {city} - {description}

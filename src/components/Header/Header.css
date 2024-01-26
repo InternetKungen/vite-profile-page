@@ -2,17 +2,17 @@ header {
     display: flex;
     flex-direction: row;
     width: 100vw;
-    position: absolute;
     top: 0;
     left: 0;
     height: fit-content;
+    flex-wrap: nowrap;
+    overflow: hidden;
 }
 
 .header-inner-container {
     direction: flex;
     justify-content: flex-start;
     width: 100%;
-    background: purple;
 }
 
 .header-logo-theme-container {
@@ -24,7 +24,6 @@ header {
 
 .header-container {
     /* Dina befintliga stilar för headern här */
-    padding: 10px;
     transition: background-color 0.3s ease-in-out;
     /* Andra stilar... */
 }

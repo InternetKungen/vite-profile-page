@@ -12,4 +12,11 @@ const darkTheme = (data) => {
     }
 }
 
-export { lightTheme, darkTheme };
+const rainbowTheme = (data) => {
+    return {
+        type: 'RAINBOW_THEME',
+        payload: data
+    }
+}
+
+export { lightTheme, darkTheme, rainbowTheme };

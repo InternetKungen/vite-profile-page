@@ -1,5 +1,7 @@
+const prefersDarkTheme = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+
 const initialState = { // Vad som ska finnas i vår store
-    theme: 'light'
+    theme: prefersDarkTheme ? 'dark' : 'light'
 }
 
 const themeReducer = (state = initialState, action) => {
@@ -16,6 +18,13 @@ const themeReducer = (state = initialState, action) => {
                 theme: 'dark'
             }
         }
+        case 'RAINBOW_THEME': {
+            return {
+                ...state,
+                theme: 'rainbow'
+            }
+        }
+
         default:
             return state;
     }

@@ -1,0 +1,25 @@
+.title-container {
+    /* Dina befintliga stilar för headern här */
+    padding: 10px;
+    transition: background-color 0.3s ease-in-out;
+    /* Andra stilar... */
+}
+
+.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.dark {
+    background-color: #000000;
+    color: #ffffff;
+}

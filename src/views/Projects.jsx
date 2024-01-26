@@ -1,11 +1,12 @@
+import { IPInfoAPI } from "../components/IPInfoAPI/IPInfoAPI";
+import VideoArticle from "../components/VideoArticle/VideoArticle";
+
 function Projects() {
 	return (
     <div>
       <p>Projects</p>
-      <img
-        src="https://www.searchenginejournal.com/wp-content/uploads/2019/10/25-of-the-best-examples-of-home-pages-5dc504205de2e.png"
-        alt=""
-      />
+      <IPInfoAPI />
+      <VideoArticle videoID="p4hR0xw4eQg" title="Book of Doom" description="Me and my friends colaborated and made this music video for the demoscene party Edison 2017. I made the music and directed parts of the scenes." />
     </div>
   );
 }

@@ -9,7 +9,6 @@ function Navbar() {
         <button className="nav-button--about"> About </button>
       </Link>
       
-
       
       <Link to="/projects" className="navLink">
         <button className="nav-button--projects"> Projects </button>
