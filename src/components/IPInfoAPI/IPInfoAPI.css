@@ -1,0 +1,9 @@
+.ip-info-container {
+    position: relative;
+    height: 0;
+    text-align: left;
+    left: 10px;
+    bottom: -19px;
+    font-size: 0.8em;
+    z-index: 0;
+}
