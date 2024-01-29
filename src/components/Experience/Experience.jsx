@@ -8,7 +8,7 @@ function Experience ({ title, city, description, dateFrom, dateTo, info }) {
         <div className={`experience-container ${theme}`}>
             <div className="experience-inner-container">
                 <div className="experience-container__top">
-                    {title}, {city} - {description}
+                <strong>{title},</strong> {city} - {description}
                 </div>
                 <div className="experience-container__middle">
                     {dateFrom} - {dateTo}

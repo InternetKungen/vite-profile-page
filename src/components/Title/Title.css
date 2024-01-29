@@ -1,8 +1,19 @@
 .title-container {
     /* Dina befintliga stilar för headern här */
-    padding: 10px;
     transition: background-color 0.3s ease-in-out;
+    width: 118%;
+    margin: 0 auto;
     /* Andra stilar... */
+    text-align: start;
+    margin-bottom: 10px;
+    border-bottom: 3px double;
+    position: relative;
+    left: -20%;
+}
+
+.title-container h2 {
+    margin-bottom: 0;
+    padding-left: 10px;
 }
 
 .light {

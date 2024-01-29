@@ -17,3 +17,7 @@
 .nav-button--contact {
     border-radius: 0 50px 0 0;
 }
+
+.navbar-container {
+    min-width: 300px;
+}

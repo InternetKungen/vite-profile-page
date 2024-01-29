@@ -7,6 +7,7 @@ header {
     height: fit-content;
     flex-wrap: nowrap;
     overflow: hidden;
+    border-bottom: 1px solid white;
 }
 
 .header-inner-container {

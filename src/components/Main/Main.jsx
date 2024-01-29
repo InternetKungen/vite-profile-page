@@ -6,6 +6,7 @@ import About from '../../views/About';
 import Home from '../../views/Home';
 import Contact from '../../views/Contact';
 import NotFound from '../../views/NotFound';
+import './Main.css';
 
 function Main() {
     return (

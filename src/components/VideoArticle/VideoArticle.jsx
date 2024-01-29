@@ -1,10 +1,12 @@
 import React from 'react';
+import './VideoArticle.css';
 
 const VideoArticle = ({ videoId, title, description }) => {
   const youtubeEmbedUrl = `https://www.youtube.com/embed/${videoId}`;
 
   return (
-    <article>
+    <article className="video-article-container">
+      <div className="video-article-container__video">
       <iframe
         title="YouTube Video"
         width="560"
@@ -13,7 +15,9 @@ const VideoArticle = ({ videoId, title, description }) => {
         frameBorder="0"
         allowFullScreen
       ></iframe>
-      <div>
+      </div>
+
+      <div className="video-article-container__info">
         <h2>{title}</h2>
         <p>{description}</p>
       </div>

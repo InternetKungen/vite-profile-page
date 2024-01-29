@@ -1,0 +1,10 @@
+.video-article-container {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+    /* max-width: 1200px; */
+}
