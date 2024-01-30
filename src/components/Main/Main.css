@@ -1,3 +1,11 @@
 main {
     max-width: 68%;
 }
+
+.about-introduction-container {
+    max-width: 800px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}

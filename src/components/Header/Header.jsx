@@ -5,7 +5,7 @@ import Logo from '../Logo/Logo';
 import './Header.css';
 import Theme from '../Theme/Theme';
 import { useSelector } from 'react-redux';
-import { IPInfoAPI } from '../IPInfoAPI/IPInfoAPI';
+// import { IPInfoAPI } from '../IPInfoAPI/IPInfoAPI';
 
 const Header = () => {
   const theme = useSelector((state) => state.theme);

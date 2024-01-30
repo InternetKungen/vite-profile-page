@@ -25,7 +25,12 @@
   border-bottom: 2px solid white;
 }
 .dark button{
-  background-color: #968066;
+  background-color: rgb(85, 85, 85);
+  color: #ffffff;
+}
+
+.light button{
+  background-color: rgb(182, 182, 182);
 }
 
 .dark .dark-theme-button {
@@ -34,6 +39,16 @@
 }
 
 .dark .light-theme-button {
+  background-color: rgb(255, 255, 255);
+  outline: 3px solid black;
+}
+
+.light .dark-theme-button {
+  background-color: rgb(0, 0, 0);
+  outline: 3px solid white;
+}
+
+.light .light-theme-button {
   background-color: rgb(255, 255, 255);
   outline: 3px solid black;
 }
@@ -49,15 +64,7 @@
   animation: rainbowColorsAnimation 1s infinite alternate;
 }
 
-.rainbow .dark-theme-button {
-  background-color: rgb(0, 0, 0);
-  outline: 3px solid white;
-}
 
-.rainbow .light-theme-button {
-  background-color: rgb(255, 255, 255);
-  outline: 3px solid black;
-}
 
 @keyframes rainbowColorsAnimation {
   0% {
@@ -93,6 +100,16 @@
 :root {
   --animation-duration: 10s;
   /* --animation-infinite: infinite; */
+}
+
+.rainbow .dark-theme-button {
+  background-color: rgb(0, 0, 0); 
+  outline: 3px solid white;
+}
+
+.rainbow .light-theme-button {
+  background-color: rgb(255, 255, 255);
+  outline: 3px solid black;
 }
 
 /* .rainbow {

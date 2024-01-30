@@ -8,6 +8,7 @@ function Title ({title}) {
     return (
         <div className={`title-container ${theme}`}>
             <h2>{title}</h2>
+            <div className="title-container__underline"></div>
         </div>
     );
 }
