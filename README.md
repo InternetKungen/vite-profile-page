@@ -11,5 +11,5 @@ Redux - Theme Locations:
 src/Redux/actions - Actions
 src/Redux/reducers - Reducers
 src/main.jsx - Store location
-src/App.css - Basic Theme Settings for dark, light...
+src/App.css - Basic Theme Settings for dark, light, and rainbow.
 Specific settings for themes in components .css.

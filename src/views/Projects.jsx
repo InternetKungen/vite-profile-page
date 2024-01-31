@@ -27,6 +27,8 @@ Participated as musician/sfx and story writer" />
       <SoundCloudPlayer source="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/475718862&color=%23423d42&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true" />
 
       <SoundCloudPlayer source="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/343733862&color=%23423d42&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true" />
+
+      <SoundCloudPlayer source="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/334749312&color=%23423d42&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true" />
     </div>
     
   );
