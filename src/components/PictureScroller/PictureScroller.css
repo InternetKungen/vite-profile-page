@@ -67,6 +67,8 @@ margin: 0 10px 0 10px;
 .picture-scroller__button-right img {
 height: 45px;
 width: 45px;
+display: flex;
+align-items: center;
 }
 
 .picture-scroller__article-container {

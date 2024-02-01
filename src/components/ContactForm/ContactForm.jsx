@@ -90,9 +90,9 @@ function ContactForm() {
 
       <div className="form-data-summary-container">
         <h3>Form Data Summary</h3>
-        <p>Name: {formData.name}</p>
-        <p>Email: {formData.email}</p>
-        <p>Message: {formData.message}</p>
+        <p>Name: <br></br> {formData.name}</p>
+        <p>Email: <br></br>{formData.email}</p>
+        <p>Message: <br></br>{formData.message}</p>
       </div>
     </div>
   );
