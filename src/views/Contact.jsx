@@ -5,6 +5,7 @@ import ContactForm from '../components/ContactForm/ContactForm';
 function Contact() {
   return (
     <div>
+        <p>Contact</p>
       <Title title="Contact Form" />
       <ContactForm />
     </div>
