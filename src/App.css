@@ -62,9 +62,8 @@
 .rainbow button{
   animation-delay: 3s;
   animation: rainbowColorsAnimation 1s infinite alternate;
+  overflow: hidden;
 }
-
-
 
 @keyframes rainbowColorsAnimation {
   0% {

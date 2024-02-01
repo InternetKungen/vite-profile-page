@@ -19,9 +19,10 @@ a {
   font-weight: 500;
   color: #ff8801;
   text-decoration: inherit;
+  transition: transform 0.3s ease-in-out;
 }
 a:hover {
-  color: #fffb01;
+  transform: scale(1.1);
 }
 
 body {

@@ -7,7 +7,7 @@ function Logo() {
         <div>
             <Link to="/" className="navLink"> 
             <figure className="logo-container">
-                Logo
+                <p>Kim Andersson</p>
             </figure>
             </Link>
         </div>

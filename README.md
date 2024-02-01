@@ -18,3 +18,10 @@ Currently, two official plugins are available:
 # API:
 
 - Disify API - Validate email in ContactForm.jsx
+
+# How to run:
+
+- As dev: npm run dev
+
+- As side: npm run build
+- Run dist/index.html

@@ -67,6 +67,44 @@ One notable project that reignited my passion for the demoscene was the collabor
 
           <Title title="Education"/>
           <Experience 
+          title="Hermods AB" 
+          city="Stockholm" 
+          description="Qualification studies"
+          dateFrom="January 2023"
+          dateTo="February 2023"
+          info="
+          Read Programming 1 for eligibility for Vocational training in IT/Data." 
+          />
+          <Experience 
+          title="Hermods AB" 
+          city="Stockholm" 
+          description="Qualification studies"
+          dateFrom="Mars 2018"
+          dateTo="May 2018"
+          info="
+          Read History 1b for admission to Film Studies." 
+          />
+          <Experience 
+          title="Hermods AB" 
+          city="Stockholm" 
+          description="Completed final grade"
+          dateFrom="2013"
+          dateTo="2015"
+          info="
+          Read Mathematics B, Swedish 2 and English 6." 
+          />
+          <Experience 
+          title="S:t Martins Gymnasium" 
+          city="Sundbyberg" 
+          description="Furniture and Interior carpentry"
+          dateFrom="August 2002"
+          dateTo="June 2005"
+          info="
+          Learned the interior carpentry trade." 
+          />
+
+          <Title title="Courses"/>
+          <Experience 
           title="Stockholm University" 
           city="Stockholm" 
           description="Social Antropology III"

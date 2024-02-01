@@ -7,7 +7,7 @@ header {
     height: fit-content;
     flex-wrap: nowrap;
     overflow: hidden;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #b6b6b6;
 }
 
 .header-inner-container {
@@ -29,12 +29,24 @@ header {
     /* Andra stilar... */
 }
 
+/*Themes*/
+
+/*Light*/
 .light {
     background-color: #ffffff;
     color: #000000;
 }
 
+.light .header {
+    border-bottom: 1px solid black;
+}
+
+/*Dark*/
 .dark {
     background-color: #000000;
     color: #ffffff;
+}
+
+.dark .header {
+    border-bottom: 1px solid white;
 }

@@ -1,0 +1,89 @@
+.logo-container {
+    border: 3px solid black;
+    border-radius: 50px;
+    height: 30px;
+    width: 155px;
+    text-align: center;
+}
+
+.logo-container p {
+    margin-top: 5px;
+    padding: 2px;
+    font-family: 'Sixtyfour', sans-serif;
+    font-size: 11px;
+    color: black;
+}
+
+/*Themes*/
+/*Dark*/
+
+.dark .logo-container p {
+    color: white;
+}
+
+.dark .logo-container {
+    border: 3px solid white;
+}
+
+/*Light*/
+.light .logo-container p {
+    color: black;
+}
+
+.light .logo-container {
+    border: 3px solid black;
+}
+
+/*Rainbow*/
+.rainbow .logo-container p {
+    animation-delay: 4s;
+    animation: rainbowColorsAnimationLogo-noborder 1s infinite alternate;
+}
+
+.rainbow .logo-container {
+    animation-delay: 3s;
+    animation: rainbowColorsAnimationLogo 1s infinite alternate;
+}
+
+  
+  @keyframes rainbowColorsAnimationLogo {
+    0% {
+      
+      border: 2px solid #0000ff;
+    }
+    16.666% {
+        border: 2px solid #ff7f00;
+    }
+    33.333% {
+        border: 2px solid #ffff00;
+    }
+    50% {
+      
+      border: 2px solid #ff9900;
+    }
+    66.666% {
+        border: 2px solid #0000ff;
+    }
+    83.333% {
+        border: 2px solid #4b0082;
+    }
+    100% {
+        border: 2px solid #8b00ff;
+    
+    }
+  }
+
+  @keyframes rainbowColorsAnimationLogo-noborder {
+    0% {
+      color: #ffffff;
+    }
+   50% {
+      color: #ff0000;
+      
+    }
+    100% {
+        
+      color: #ffee00;
+    }
+  }
+  

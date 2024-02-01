@@ -5,6 +5,7 @@
     width: 24%;
     min-width: 100px;
     font-family: 'Sixtyfour', sans-serif;
+    overflow: hidden;
 }
 
 .nav-button--about {
@@ -21,4 +22,6 @@
 
 .navbar-container {
     min-width: 300px;
+    overflow: hidden;
 }
+

@@ -1,4 +1,5 @@
 import { IPInfoAPI } from "../components/IPInfoAPI/IPInfoAPI";
+import PictureArticle from "../components/PictureArticle/PictureArticle";
 import SoundCloudPlayer from "../components/SoundCloudPlayer/SoundCloudPlayer";
 import Title from "../components/Title/Title";
 import VideoArticle from "../components/VideoArticle/VideoArticle";
@@ -44,7 +45,13 @@ Participated as musician/sfx and story writer" />
 
     <SoundCloudPlayer source="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/36699486&color=%23423d42&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true" />
 
-    <Title title="GitHub" />
+    <Title title="Space Memory Game" />
+    <PictureArticle 
+    imageSrc="/images/space-memory-game/space-memory-game.jpg"
+    text="Space Memory Game was made with HTML, CSS and JS"
+    appLink="https://internetkungen.github.io/MemoryGame/"
+    githubLink="https://github.com/InternetKungen/MemoryGame"
+     />
     </div>
   );
 }
