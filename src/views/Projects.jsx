@@ -29,8 +29,23 @@ Participated as musician/sfx and story writer" />
       <SoundCloudPlayer source="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/343733862&color=%23423d42&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true" />
 
       <SoundCloudPlayer source="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/334749312&color=%23423d42&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true" />
-    </div>
     
+
+    <Title title="Chiptunes" />
+    <SoundCloudPlayer source="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/36699496&color=%23423d42&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true" />
+
+    <SoundCloudPlayer source="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/36701204&color=%23423d42&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true" />
+
+    <SoundCloudPlayer source="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/36699482&color=%23423d42&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true" />
+
+    <SoundCloudPlayer source="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/36699483&color=%23423d42&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true" />
+
+    <SoundCloudPlayer source="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/36699484&color=%23423d42&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true" />
+
+    <SoundCloudPlayer source="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/36699486&color=%23423d42&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true" />
+
+    <Title title="GitHub" />
+    </div>
   );
 }
 

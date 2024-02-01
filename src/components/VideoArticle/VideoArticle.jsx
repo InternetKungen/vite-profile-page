@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './VideoArticle.css';
 
 const VideoArticle = ({ videoId, title, description }) => {
@@ -8,12 +9,13 @@ const VideoArticle = ({ videoId, title, description }) => {
     <article className="video-article-container">
       <div className="video-article-container__video">
       <iframe
-        title="YouTube Video"
+        title={title}
         width="560"
         height="315"
         src={youtubeEmbedUrl}
         frameBorder="0"
         allowFullScreen
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       ></iframe>
       </div>
 
