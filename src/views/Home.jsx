@@ -1,11 +1,12 @@
+import PictureScroller from "../components/PictureScroller/PictureScroller";
+import Title from "../components/Title/Title";
+
 function Home() {
 	return (
     <div>
         <p>Home</p>
-        <img
-            src="https://www.searchenginejournal.com/wp-content/uploads/2019/10/25-of-the-best-examples-of-home-pages-5dc504205de2e.png"
-            alt=""
-        />
+        <Title title="Photos" />
+      <PictureScroller />
     </div>
   );
 }
