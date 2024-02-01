@@ -32,11 +32,11 @@ function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Validera e-post med Disify API
+    // Validate email with Disify API
     const validationData = await validateEmail(formData.email);
     setEmailValidation(validationData);
 
-    // Kontrollera valideringsresultatet och skicka formulärdata om e-posten är giltig
+    // Check the validation results and send form data if email is valid
     if (validationData && validationData.format && !validationData.disposable) {
       console.log('Form Data:', formData);
     } else {
