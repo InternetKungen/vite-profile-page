@@ -27,5 +27,5 @@ Currently, two official plugins are available:
 
 - As dev: npm run dev
 
-- As side: npm run build
+- As website: npm run build
 - Run dist/index.html
