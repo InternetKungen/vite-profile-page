@@ -67,6 +67,15 @@ One notable project that reignited my passion for the demoscene was the collabor
 
           <Title title="Education"/>
           <Experience 
+          title="KYH" 
+          city="Stockholm" 
+          description="Frontend Developer"
+          dateFrom="August 2023"
+          dateTo="present"
+          info="
+          Studying to become a frontend developer." 
+          />
+          <Experience 
           title="Hermods AB" 
           city="Stockholm" 
           description="Qualification studies"
