@@ -37,7 +37,12 @@ function ContactForm() {
     setEmailValidation(validationData);
 
     // Check the validation results and send form data if email is valid
-    if (validationData && validationData.format && !validationData.disposable) {
+    if (
+      validationData &&
+      validationData.format &&
+      !validationData.disposable &&
+      validationData.dns
+    ) {
       console.log('Form Data:', formData);
     } else {
       return;
@@ -47,52 +52,76 @@ function ContactForm() {
   return (
     <div>
       <section className="contact-form-container">
-      <form onSubmit={handleSubmit}>
-        <div className="contact-form-container__name">
-        <label htmlFor="name">Name:</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-        />
-        </div>
+        <form onSubmit={handleSubmit}>
+          <div className="contact-form-container__name">
+            <label htmlFor="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+            />
+          </div>
 
-        <div className="contact-form-container__email">
-        <label htmlFor="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          style={{ borderColor: emailValidation && !emailValidation.format ? 'red' : '' }}
-        />
-        {emailValidation && !emailValidation.format && (
-          <p style={{ color: 'red' }}>Invalid email address.</p>
-        )}
-        </div>
-        
-        <div className="contact-form-container__message">
-        <label htmlFor="message">Message:</label>
-        <textarea
-          id="message"
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-        ></textarea>
-        </div>
+          <div className="contact-form-container__email">
+            <label htmlFor="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              style={{
+                borderColor:
+                  emailValidation &&
+                  (!emailValidation.format ||
+                    emailValidation.disposable ||
+                    !emailValidation.dns)
+                    ? 'red'
+                    : '',
+              }}
+            />
+            {emailValidation && (
+              <p className="contact-form__notice" style={{ color: 'red' }}>
+                {emailValidation.disposable
+                  ? 'Disposable email address not allowed.'
+                  : !emailValidation.dns
+                  ? 'Invalid DNS for email address.'
+                  : !emailValidation.format
+                  ? 'Invalid email format.'
+                  : ''}
+              </p>
+            )}
+          </div>
 
-        <button type="submit">Submit</button>
-      </form>
+          <div className="contact-form-container__message">
+            <label htmlFor="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+            ></textarea>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
       </section>
 
       <div className="form-data-summary-container">
         <h3>Form Data Summary</h3>
-        <p>Name: <br></br> {formData.name}</p>
-        <p>Email: <br></br>{formData.email}</p>
-        <p>Message: <br></br>{formData.message}</p>
+        <p>
+          Name: <br></br> {formData.name}
+        </p>
+        <p>
+          Email: <br></br>
+          {formData.email}
+        </p>
+        <p>
+          Message: <br></br>
+          {formData.message}
+        </p>
       </div>
     </div>
   );

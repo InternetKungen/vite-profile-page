@@ -7,7 +7,8 @@
 
   /* color-scheme: light dark; */
   color: rgba(255, 255, 255, 0.87);
-  background-color: #282828;
+  /* background-color: #282828; */
+  background: linear-gradient(360deg,black, black,  #282828, black);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

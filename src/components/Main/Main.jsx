@@ -7,6 +7,7 @@ import Home from '../../views/Home';
 import Contact from '../../views/Contact';
 import NotFound from '../../views/NotFound';
 import './Main.css';
+import FadeOff from '../FadeOff/FadeOff';
 
 function Main() {
     return (
@@ -18,6 +19,7 @@ function Main() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
+            <FadeOff />
         </main>
     );
 }

@@ -39,6 +39,15 @@
     margin-bottom: 10px;
 }
 
+.contact-form__notice {
+    position: absolute;
+    display: flex;
+    text-wrap: nowrap;
+    left: calc(50% - 90px);
+    top: 283px;
+    font-size: 0.8em;
+}
+
 /*Themes*/
 
 /*Dark*/
