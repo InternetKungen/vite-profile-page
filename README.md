@@ -1,3 +1,7 @@
+# Profile Page
+
+- This is a profile page made with vite-react
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

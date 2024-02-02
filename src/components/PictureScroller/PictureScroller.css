@@ -46,6 +46,7 @@ cursor: pointer;
 background: transparent;
 border: none;
 padding: 14px;
+border-radius: 8px;
 }
 
 .picture-scroller__button-play img {

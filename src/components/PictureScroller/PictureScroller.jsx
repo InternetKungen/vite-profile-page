@@ -29,97 +29,98 @@ const PictureScroller = () => {
         }
     ];
 
-    let intervalId;
-
-    //Change picture view interval 
+    // Change picture view interval 
     useEffect(() => {
-    if (isPlaying) {
-        intervalId = setInterval(() => {
-        changeImage(1);
-        }, 10000); // Set time
-    }
+        let intervalId;
 
-    return () => clearInterval(intervalId);
-    }, [isPlaying]);
+        if (isPlaying) {
+            intervalId = setInterval(() => {
+                changeImage(1);
+            }, 5000); // Set time
+        }
+
+        return () => clearInterval(intervalId);
+    }, [isPlaying, currentIndex]);
 
     const changeImageDirectionPre = (direction) => {
-    clearInterval(intervalId);
-    changeImage(direction);
+        clearInterval();
+        changeImage(direction);
     };
 
     const changeImage = (direction) => {
-    const newIndex = currentIndex + direction;
-    setCurrentIndex((prevIndex) => {
-        if (newIndex < 0) {
-        return prevIndex;
-        } else if (newIndex >= articleData.length) {
-        return prevIndex;
-        } else {
-        return newIndex;
-        }
-    });
+        const newIndex = currentIndex + direction;
+    
+        setCurrentIndex((prevIndex) => {
+            if (newIndex < 0) {
+                return articleData.length - 1;
+            } else if (newIndex >= articleData.length) {
+                return 0;
+            } else {
+                return newIndex;
+            }
+        });
     };
 
     const togglePlayStop = () => {
-    setIsPlaying((prevIsPlaying) => !prevIsPlaying);
+        setIsPlaying((prevIsPlaying) => !prevIsPlaying);
     };
 
     const updateImage = () => {
-    articleData.forEach((article, index) => {
-        document.querySelector(`.article-${index}`).classList.toggle('hide', index !== currentIndex);
-    });
+        articleData.forEach((article, index) => {
+            document.querySelector(`.article-${index}`).classList.toggle('hide', index !== currentIndex);
+        });
     };
 
     useEffect(() => {
-    updateImage();
+        updateImage();
     }, [currentIndex]);
 
     return (
-    <section className="picture-scroller">
-        
-        <div className="picture-scroller__button-container">
-            <button
-                className="picture-scroller__button-left"
-                onClick={() => changeImageDirectionPre(-1)}
-            >
-                <img src="/images/left-arrow-color.png" alt="Left arrow" />
-            </button>
-            <button
-                className="picture-scroller__button-right"
-                onClick={() => changeImageDirectionPre(1)}
-            >
-                <img src="/images/right-arrow-color.png" alt="Right arrow" />
-            </button>
-        </div>
+        <section className="picture-scroller">
+            
+            <div className="picture-scroller__button-container">
+                <button
+                    className="picture-scroller__button-left"
+                    onClick={() => changeImageDirectionPre(-1)}
+                >
+                    <img src="/images/left-arrow-color.png" alt="Left arrow" />
+                </button>
+                <button
+                    className="picture-scroller__button-right"
+                    onClick={() => changeImageDirectionPre(1)}
+                >
+                    <img src="/images/right-arrow-color.png" alt="Right arrow" />
+                </button>
+            </div>
 
-        <section className="picture-scroller__article-container">
-        {articleData.map((article, index) => (
-            <article
-            key={index}
-            className={`picture-scroller__article article-${index} ${
-                index === currentIndex ? '' : 'hide'
-            }`}
+            <section className="picture-scroller__article-container">
+            {articleData.map((article, index) => (
+                <article
+                key={index}
+                className={`picture-scroller__article article-${index} ${
+                    index === currentIndex ? '' : 'hide'
+                }`}
+                >
+                <figure className="picture-scroller__article__img-container">
+                    <img src={article.imgSrc} alt={`Article ${index + 1}`} />
+                </figure>
+                <p>{article.text}</p>
+                </article>
+            ))}
+            </section>
+            <div className="picture-scroller__play-stop-container">
+            <button
+                className="picture-scroller__button-play"
+                onClick={togglePlayStop}
             >
-            <figure className="picture-scroller__article__img-container">
-                <img src={article.imgSrc} alt={`Article ${index + 1}`} />
-            </figure>
-            <p>{article.text}</p>
-            </article>
-        ))}
+                {isPlaying ? (
+                <img src="/images/stop.png" alt="Stop" />
+                ) : (
+                <img src="/images/play.png" alt="Play" />
+                )}
+            </button>
+            </div>
         </section>
-        <div className="picture-scroller__play-stop-container">
-        <button
-            className="picture-scroller__button-play"
-            onClick={togglePlayStop}
-        >
-            {isPlaying ? (
-            <img src="/images/stop.png" alt="Stop" />
-            ) : (
-            <img src="/images/play.png" alt="Play" />
-            )}
-        </button>
-        </div>
-    </section>
     );
 };
 
