@@ -9,11 +9,11 @@ const VideoArticle = ({ videoId, title, description }) => {
     <article className="video-article-container">
       <div className="video-article-container__video">
       <iframe
-        title={title}
+        title='video'
         width="560"
         height="315"
         src={youtubeEmbedUrl}
-        frameBorder="0"
+        frameborder="0"
         allowFullScreen
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       ></iframe>

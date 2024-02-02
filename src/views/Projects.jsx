@@ -1,4 +1,3 @@
-import { IPInfoAPI } from "../components/IPInfoAPI/IPInfoAPI";
 import PictureArticle from "../components/PictureArticle/PictureArticle";
 import SoundCloudPlayer from "../components/SoundCloudPlayer/SoundCloudPlayer";
 import Title from "../components/Title/Title";
@@ -12,14 +11,14 @@ function Projects() {
       <section className="pc-demos-container">
 
       <Title title="PC Demo" />
-      <VideoArticle videoID="p4hR0xw4eQg" title="Book of Doom" description="Nominated to first place in PC Demo, Edison Party 2017 (edisonparty.com)
+      <VideoArticle videoId="p4hR0xw4eQg" title="Book of Doom" description="Nominated to first place in PC Demo, Edison Party 2017 (edisonparty.com)
 Participated as musician/sfx and story writer." />
-      <VideoArticle videoID="6hwJ-mPjGCQ" title="Obey" description="Nominated to first place in PC Demo, Edison Party 2019 (edisonparty.com)
+      <VideoArticle videoId="6hwJ-mPjGCQ" title="Obey" description="Nominated to first place in PC Demo, Edison Party 2019 (edisonparty.com)
 Participated as musician/sfx and story writer" />
       </section>
       
       <Title title="Animation & Video" />
-      <VideoArticle videoID="K5XhxXi6zvo" title="Slow Move Down Town" description="Nominated to second place in Animation & Video, Edison Party 2022
+      <VideoArticle videoId="K5XhxXi6zvo" title="Slow Move Down Town" description="Nominated to second place in Animation & Video, Edison Party 2022
       (edisonparty.com)" />
 
       <Title title="Music" />

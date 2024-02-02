@@ -17,9 +17,6 @@ const Header = () => {
             <Logo />
             <Theme />
           </div>
-          <div className='ip-info-container'>
-            {/* <IPInfoAPI /> */}
-          </div>
             <Navbar />
         </div>
     </header>
